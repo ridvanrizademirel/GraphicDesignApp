@@ -20,7 +20,14 @@ try:
     xPoint = np.array(xpointList)
     yPoint = np.array(yPointList)
 
+    xLabelName = input("Enter x coordination name :")
+    yLabelName = input("Enter y coordination name :")
+
     plt.plot(xPoint,yPoint,color = f'{coordLineColor}')
+
+    plt.xlabel(str(xLabelName))
+    plt.ylabel(str(yLabelName))
+
     plt.show()
 except :
     print("Beware! Entered type is incorrect.")
