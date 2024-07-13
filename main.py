@@ -22,9 +22,11 @@ try:
 
     xLabelName = input("Enter x coordination name :")
     yLabelName = input("Enter y coordination name :")
+    graphicTitle = input("Enter graphic name :")
 
     plt.plot(xPoint,yPoint,color = f'{coordLineColor}')
 
+    plt.title(str(graphicTitle))
     plt.xlabel(str(xLabelName))
     plt.ylabel(str(yLabelName))
 
